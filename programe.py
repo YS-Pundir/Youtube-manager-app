@@ -12,7 +12,7 @@ def save_data_helper(videos):
         json.dump(videos,file)       
     
 def list_all_videos(videos):
-    for index,value in enumerate(videos,start=1):
+    for index,value in enumerate(videos,start=1):#enumerate is used to give the index to the list,tuple etc
         print(f"{index}.  {value["name"]}, Duration:{value['time']} ")
 
 def add_video(videos):
@@ -22,9 +22,20 @@ def add_video(videos):
     save_data_helper(videos)
 
 def update_videos(videos):
-    pass
+    list_all_videos(videos)
+    index=int (input("Enter the no of the video to be updated : ",))
+    if 1<=index<=len(videos):
+        name=input("enter the new name of the video")
+        time=input("enter the new duraction of the video")
+        videos[index-1]={'name':name,'time':time}
+        save_data_helper(videos)
+    else:
+        print("Enter the valid input")
+        
+    
 def delete_video(videos):
     pass
+    
 def exit_app(videos):
     pass
                   
