@@ -1,43 +1,74 @@
- 🎬 YouTube Manager App
+🎬 YouTube Video Manager (Python CLI)
 
-A modern and intuitive application for managing YouTube content efficiently.  
-YouTube Manager App helps creators organize videos, track analytics, manage playlists, schedule uploads, and streamline workflow — all from a clean and powerful dashboard.
+A clean and efficient command-line application for managing a personal list of YouTube videos.
+This tool helps you quickly organize video titles and durations using a simple, intuitive, and persistent Python-based workflow.
 
----
+🚀 Features
+🔧 Video Management
 
-## 🚀 Features
+Add new YouTube videos with title and duration
 
-### 🔧 Content Management
-- Upload videos directly from the app  
-- Edit video titles, descriptions, tags, and thumbnails  
-- Bulk update metadata  
-- Manage playlists with drag-and-drop organization  
+Update existing video details
 
-### 📊 Analytics Dashboard
-- Real-time channel statistics  
-- Video performance metrics (views, CTR, watch time, retention, etc.)  
-- Audience demographics & traffic sources  
-- Historical growth charts
+Delete videos you no longer need
 
-### 📅 Scheduling & Automation
-- Schedule uploads/posting times  
-- Auto-publish to playlists  
-- Automated reminders and content workflow tools
+View a neatly formatted list of all stored videos
 
-### 👥 Channel & Team Tools
-- Multi-channel management  
-- Role-based team access *(if applicable)*  
-- Comment moderation interface
+💾 Persistent Storage
 
-### 🛠 Technical Highlights
-- Built with **[your technologies: e.g., React, Node.js, Electron, Flutter]**  
-- OAuth 2.0 secure Google/YouTube API integration  
-- Cloud sync and offline support  
-- Extensible modular architecture
+All data is stored automatically in a JSON file (youtube.txt)
 
----
+The app loads and saves data seamlessly
 
-## 🖥 Screenshots
+No database setup required
 
-> *(Add your screenshots here)*  
-Example placeholder:
+🛠 Technical Highlights
+
+Built entirely with Python
+
+JSON-based data handling
+
+Modular functions for clarity and maintainability
+
+Beginner-friendly but follows clean coding practices
+
+📂 Project Structure
+.
+├── main.py            # Core CLI application
+├── youtube.txt        # Auto-generated JSON storage file
+└── README.md          # Project documentation
+
+▶️ How to Use
+
+Run the application:
+
+python main.py
+
+
+Choose from the interactive menu:
+
+1. List all YouTube videos
+2. Add a YouTube video
+3. Update a YouTube video
+4. Delete a YouTube video
+5. Exit the app
+
+
+Enter the requested information when prompted and the app will handle the rest.
+
+
+🌱 Future Enhancements
+
+Search videos by name
+
+Add tags or categories
+
+Export data to CSV
+
+Convert to a GUI application
+
+Validation & error-checking improvements
+
+📄 License
+
+This project is released under the MIT License.
