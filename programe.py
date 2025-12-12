@@ -29,11 +29,8 @@ def exit_app(videos):
     pass
                   
 
-
-
-
-
 def main():
+    videos=load_data()
     while True:
         print("-"*50)
         print("Youtube Manager")
