@@ -77,6 +77,7 @@ def main():
                 delete_video(videos)
             case 5 :
                 exit_app(videos)
+                
 
 if __name__=="__main__":#
     main()
