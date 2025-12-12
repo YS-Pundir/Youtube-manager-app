@@ -29,12 +29,22 @@ def update_videos(videos):
         time=input("enter the new duraction of the video")
         videos[index-1]={'name':name,'time':time}
         save_data_helper(videos)
+        print("The information has been updated")
     else:
         print("Enter the valid input")
         
     
 def delete_video(videos):
-    pass
+    list_all_videos(videos)
+    index=int(input("enter the number of the vidoe , which needed to be deleted : ",))
+    
+    if 1<=index  <=len(videos):
+        del videos[index-1]
+        save_data_helper(videos)
+        print("the video has been deleted")
+    else:
+        print("please enter a valid index")
+    
     
 def exit_app(videos):
     pass
