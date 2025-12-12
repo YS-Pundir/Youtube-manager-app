@@ -36,7 +36,7 @@ Feature	Status	Description
 🚀 Quick Start
 Installation
 # Clone the repository
-git clone https://github.com/your-username/youtube-video-manager.git
+git clone https://github.com/YS-Pundir/youtube-video-manager.git
 
 # Navigate to project folder
 cd youtube-video-manager
@@ -120,7 +120,7 @@ Easily extendable to support categories, search, or GUI
 I’m Yuvraj Singh Pundir, a Python developer building practical and professional projects.
 This project demonstrates creating a robust CLI-based application with persistent storage and modular design — perfect for showcasing technical skills on GitHub.
 
-GitHub: @your-username
+GitHub: YS-Pundir
 
 📄 License
 
